@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import "tailwind/tailwind.scss";
 
 const Home: NextPage<{ userAgent: string }> = ({ userAgent }) => (
     <h1>Hello world! - user agent: {userAgent}</h1>
