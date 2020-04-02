@@ -7,6 +7,7 @@
     "license": "MIT",
     "dependencies": {
         "next": "^9.3.3",
+        "nextjs-fonts": "^0.22.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
     },

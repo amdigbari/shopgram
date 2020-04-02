@@ -595,6 +595,26 @@ video {
   height: auto;
 }
 
+@font-face {
+  font-family: 'IRANSansWeb';
+
+  src: url('/static/fonts/IRANSansWeb/IRANSansWeb_Light.eot');
+
+  src: url('/static/fonts/IRANSansWeb/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/IRANSansWeb/IRANSansWeb_Light.woff2') format('woff2'),
+        url('/static/fonts/IRANSansWeb/IRANSansWeb_Light.woff') format('woff'),
+        url('/static/fonts/IRANSansWeb/IRANSansWeb_Light.ttf') format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: IRANSansWeb;
+}
+
 .container {
   width: 100%;
 }
@@ -3703,6 +3723,10 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-primary {
+  font-family: IRANSansWeb;
 }
 
 .font-hairline {
@@ -17027,6 +17051,10 @@ video {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-primary {
+    font-family: IRANSansWeb;
   }
 
   .sm\:font-hairline {
@@ -30354,6 +30382,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-primary {
+    font-family: IRANSansWeb;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -43679,6 +43711,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-primary {
+    font-family: IRANSansWeb;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -57002,6 +57038,10 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-primary {
+    font-family: IRANSansWeb;
   }
 
   .xl\:font-hairline {

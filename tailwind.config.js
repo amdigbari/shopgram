@@ -1,5 +1,11 @@
 module.exports = {
-    theme: {},
+    theme: {
+        extend: {
+            fontFamily: {
+                primary: ['IRANSansWeb'],
+            },
+        },
+    },
     variants: {},
-    plugins: []
+    plugins: [],
 };
