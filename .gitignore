@@ -38,4 +38,7 @@ jspm_packages
 .next
 
 #tailwind
-src/tailwind/tailwind.css
+src/tailwind/tailwind.scss
+
+#font license
+public/fonts/FontLicense.txt
