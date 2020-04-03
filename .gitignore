@@ -32,6 +32,7 @@ jspm_packages
 
 # Optional npm cache directory
 .npm
+.vscode
 
 # Optional REPL history
 .node_repl_history
@@ -42,4 +43,6 @@ public/styles/tailwind/tailwind.css
 
 #font license
 public/fonts/FontLicense.txt
-.vscode
+
+#service-worker
+public/service-worker
