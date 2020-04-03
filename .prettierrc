@@ -38,7 +38,7 @@
             "files": ["*.ts", "*.tsx"],
             "options": {
                 "semi": true,
-                "parser": "babel-ts"
+                "parser": "typescript"
             }
         },
         {

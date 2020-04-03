@@ -1,0 +1,20 @@
+@tailwind base;
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('/fonts/IRANSansWeb/IRANSansWeb_Light.eot');
+    src: url('/fonts/IRANSansWeb/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/IRANSansWeb/IRANSansWeb_Light.woff2') format('woff2'), url('/fonts/IRANSansWeb/IRANSansWeb_Light.woff') format('woff'),
+        url('/fonts/IRANSansWeb/IRANSansWeb_Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    @apply font-primary;
+}
+
+@tailwind components;
+
+@tailwind utilities;

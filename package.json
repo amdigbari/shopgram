@@ -15,7 +15,7 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "tailwind": "npx tailwindcss build src/tailwind/config.scss -o src/tailwind/tailwind.scss"
+        "tailwind": "npx tailwindcss build public/styles/tailwind/config.scss -o public/styles/tailwind/tailwind.css"
     },
     "devDependencies": {
         "@types/node": "^13.9.8",

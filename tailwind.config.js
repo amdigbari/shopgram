@@ -2,7 +2,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                primary: ['IRANSansWeb'],
+                primary: ["'IRANSansWeb'"],
             },
         },
     },
