@@ -5,31 +5,12 @@ const withOffline = require('next-offline');
 
 const offlineConfigs = {
     workboxOpts: {
+        swDest: process.env.NEXT_EXPORT ? 'service-worker.js' : 'static/service-worker.js',
         runtimeCaching: [
-            {
-                // Match any request that ends with .png, .jpg, .jpeg or .svg.
-                urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
-
-                // Apply a cache-first strategy.
-                handler: 'CacheFirst',
-
-                options: {
-                    // Use a custom cache name.
-                    cacheName: 'images',
-
-                    // Only cache 10 images.
-                    expiration: {
-                        maxEntries: 10,
-                    },
-                },
-            },
             {
                 urlPattern: /^https?.*/,
                 handler: 'NetworkFirst',
                 options: {
-                    cacheableResponse: {
-                        statuses: [0, 200],
-                    },
                     cacheName: 'offlineCache',
                     expiration: {
                         maxEntries: 200,
@@ -37,6 +18,16 @@ const offlineConfigs = {
                 },
             },
         ],
+    },
+    experimental: {
+        async rewrites() {
+            return [
+                {
+                    source: '/service-worker.js',
+                    destination: '/_next/static/service-worker.js',
+                },
+            ];
+        },
     },
 };
 
