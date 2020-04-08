@@ -15,7 +15,7 @@
     },
     "scripts": {
         "dev": "next",
-        "build": "next build",
+        "build": "yarn tailwind && next build",
         "start": "next start",
         "tailwind": "npx tailwindcss build public/styles/tailwind/config.scss -o public/styles/tailwind/tailwind.css"
     },
