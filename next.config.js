@@ -1,6 +1,4 @@
-const withSass = require('@zeit/next-sass');
 const withPurgeCss = require('next-purgecss');
-const withFonts = require('nextjs-fonts');
 const withOffline = require('next-offline');
 
 const offlineConfigs = {
@@ -33,12 +31,7 @@ const offlineConfigs = {
 
 module.exports = withOffline({
     ...offlineConfigs,
-    ...withSass({
-        ...withFonts(
-            withPurgeCss({
-                purgeCssEnabled: ({ dev, isServer }) => !dev && !isServer, // Only enable PurgeCSS for client-side production builds
-            }),
-        ),
-        cssModules: true,
+    ...withPurgeCss({
+        purgeCssEnabled: ({ dev, isServer }) => !dev && !isServer, // Only enable PurgeCSS for client-side production builds
     }),
 });
