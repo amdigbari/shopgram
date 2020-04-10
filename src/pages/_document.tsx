@@ -26,12 +26,12 @@ class MyDocument extends Document {
                         content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
                     />
 
-                    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-85x128.png" />
-                    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/icon-64x96.png" />
-                    <link rel="icon" type="image/png" sizes="72x72" href="/images/icons/icon-48x72.png" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/icon-128x128.png" />
+                    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/icon-96x96.png" />
+                    <link rel="icon" type="image/png" sizes="72x72" href="/images/icons/icon-72x72.png" />
                     <link rel="manifest" href="/manifest.json" />
                     {/* <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#5bbad5" /> */}
-                    {/* <link rel="shortcut icon" href="/static/icons/favicon.ico" /> */}
+                    <link rel="shortcut icon" href="/images/icons/logo.ico" />
                     <link rel="stylesheet" href="/styles/tailwind/tailwind.css" />
 
                     {/* <meta name="twitter:card" content="summary" />
@@ -48,7 +48,7 @@ class MyDocument extends Document {
                     <meta property="og:image" content="https://yourdomain.com/static/icons/apple-touch-icon.png" /> */}
                 </Head>
 
-                <body className="font-primary">
+                <body className="font-primary" dir="rtl">
                     <Main />
                     <NextScript />
                 </body>
