@@ -6,7 +6,7 @@
     "author": "amdigbari <amirmahdidigbari@yahoo.com>",
     "license": "MIT",
     "dependencies": {
-        "next": "^9.3.3",
+        "next": "^9.3.4",
         "next-offline": "^5.0.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -19,8 +19,8 @@
         "tailwind": "npx tailwindcss build public/styles/tailwind/config.scss -o public/styles/tailwind/tailwind.css"
     },
     "devDependencies": {
-        "@types/node": "^13.9.8",
-        "@types/react": "^16.9.31",
+        "@types/node": "^13.11.1",
+        "@types/react": "^16.9.34",
         "next-purgecss": "^4.0.0",
         "tailwindcss": "^1.2.0",
         "typescript": "^3.8.3"
