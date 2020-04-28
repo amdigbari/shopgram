@@ -2,20 +2,10 @@ const withPurgeCss = require('next-purgecss');
 const withOffline = require('next-offline');
 
 const offlineConfigs = {
+    generateSw: false,
     workboxOpts: {
-        swDest: process.env.NEXT_EXPORT ? 'service-worker.js' : 'static/service-worker.js',
-        runtimeCaching: [
-            {
-                urlPattern: /^https?.*/,
-                handler: 'NetworkFirst',
-                options: {
-                    cacheName: 'offlineCache',
-                    expiration: {
-                        maxEntries: 200,
-                    },
-                },
-            },
-        ],
+        swSrc: './public/sw.js',
+        swDest: 'static/service-worker.js',
     },
     experimental: {
         async rewrites() {
